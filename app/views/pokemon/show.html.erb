@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <%#= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%#= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  <title>Prueba técnica EVoting - Andrés Riquelme</title>
+</head>
+
+<body>
+<div class="container pt-3">
+  <div class="row">
+    <div class="col-md-12">
+        <%= link_to 'Volver al inicio', '/', :class => "btn btn-outline-danger"  %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <h1 class="text-center">¡Encontraste un <%= @pokemon.name %>!</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="pokemon-card mx-auto">
+        <img src="<%= @pokemon.image %>" class="card-img-top" alt=<%= @pokemon.name %>>
+        <div class="card-body">
+          <h5 class="card-title"><%= @pokemon.name %></h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">ID: <%= @pokemon.id %></li>
+            <li class="list-group-item">Peso: <%= UnitUtils.hectogram_to_kg(@pokemon.weight) %> kilos</li>
+            <li class="list-group-item">Altura: <%= UnitUtils.decimeter_to_meter(@pokemon.height) %> metros</li>
+            <li class="list-group-item">Tipo: <%= sanitize @types %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 text-center p-3">
+      <%= link_to 'Volver a buscar', '/pokemon/', :class => "btn btn-primary"  %>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+
+</html>

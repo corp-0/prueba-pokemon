@@ -1,0 +1,127 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ */
+
+@import "bootstrap";
+
+.pokemon-card {
+  @extend .card;
+  align-items: center;
+  justify-content: center;
+  width: 40vh;
+}
+
+.type {
+  @extend .badge;
+  margin: 0.5rem;
+}
+
+.type-normal {
+  @extend .type;
+  background-color: #A8A77A;
+}
+
+.type-fire {
+  @extend .type;
+  background-color: #EE8130;
+}
+
+.type-water {
+  @extend .type;
+  background-color: #6390F0;
+}
+
+.type-electric {
+  @extend .type;
+  background-color: #F7D02C;
+}
+
+.type-grass {
+  @extend .type;
+  background-color: #7AC74C;
+}
+
+.type-ice {
+  @extend .type;
+  background-color: #96D9D6;
+}
+
+.type-fighting {
+  @extend .type;
+  background-color: #C22E28;
+}
+
+.type-poison {
+  @extend .type;
+  background-color: #A33EA1;
+}
+
+.type-ground {
+  @extend .type;
+  background-color: #E2BF65;
+}
+
+.type-flying {
+  @extend .type;
+  background-color: #A98FF3;
+}
+
+.type-psychic {
+  @extend .type;
+  background-color: #F95587;
+}
+
+.type-bug {
+  @extend .type;
+  background-color: #A6B91A;
+}
+
+.type-rock {
+  @extend .type;
+  background-color: #B6A136;
+}
+
+.type-ghost {
+  @extend .type;
+  background-color: #735797;
+}
+
+.type-dragon {
+  @extend .type;
+  background-color: #6F35FC;
+}
+
+.type-dark {
+  @extend .type;
+  background-color: #705746;
+}
+
+.type-steel {
+  @extend .type;
+  background-color: #B7B7CE;
+}
+
+.type-fairy {
+  @extend .type;
+  background-color: #D685AD;
+}
+
+.type-shadow {
+  @extend .type;
+  background-color: #000000;
+}
+
+.type-unknown {
+  @extend .type;
+  background-color: #C8C8C8;
+}
