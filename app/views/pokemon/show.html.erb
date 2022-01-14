@@ -33,8 +33,8 @@
           <h5 class="card-title"><%= @pokemon.name %></h5>
           <ul class="list-group list-group-flush">
             <li class="list-group-item">ID: <%= @pokemon.id %></li>
-            <li class="list-group-item">Peso: <%= UnitUtils.hectogram_to_kg(@pokemon.weight) %> kilos</li>
-            <li class="list-group-item">Altura: <%= UnitUtils.decimeter_to_meter(@pokemon.height) %> metros</li>
+            <li class="list-group-item">Peso: <%= UnitUtils.hectogram_to_kg(@pokemon.weight) %></li>
+            <li class="list-group-item">Altura: <%= UnitUtils.decimeter_to_meter(@pokemon.height) %></li>
             <li class="list-group-item">Tipo: <%= sanitize @types %></li>
           </ul>
         </div>
