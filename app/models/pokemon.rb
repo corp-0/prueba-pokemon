@@ -10,18 +10,18 @@ class Pokemon
     @types = types
   end
 
-  def self.instance_from_json(json)
+  def self.instance_from_dict(dict)
     types = []
-    json['types'].each do |type|
+    dict['types'].each do |type|
       types.push(PokemonType.new(type['type']['name']))
     end
 
     Pokemon.new(
-      json['id'],
-      json['name'].capitalize,
-      json['sprites']['other']['official-artwork']['front_default'],
-      json['weight'],
-      json['height'],
+      dict['id'],
+      dict['name'].capitalize,
+      dict['sprites']['other']['official-artwork']['front_default'],
+      dict['weight'],
+      dict['height'],
       types
     )
   end
